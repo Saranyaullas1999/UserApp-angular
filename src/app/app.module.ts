@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import { SiginupComponent } from './siginup/siginup.component';
 import { RouterModule ,Routes} from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const appRoutes:Routes=[
@@ -20,7 +21,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     SigninComponent,
-    SiginupComponent
+    SiginupComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
