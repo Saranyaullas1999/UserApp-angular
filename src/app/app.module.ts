@@ -5,7 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import { SiginupComponent } from './siginup/siginup.component';
+import { RouterModule ,Routes} from '@angular/router';
 
+
+const appRoutes:Routes=[
+  {
+    path:"",component:SigninComponent
+  },
+  {
+    path:"signup",component:SiginupComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +24,8 @@ import { SiginupComponent } from './siginup/siginup.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
