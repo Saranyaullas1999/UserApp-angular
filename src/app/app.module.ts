@@ -16,6 +16,9 @@ const appRoutes:Routes=[
   },
   {
     path:"signup",component:SiginupComponent
+  },
+  {
+    path:"dashboard",component:DashboardComponent
   }
 ]
 @NgModule({
